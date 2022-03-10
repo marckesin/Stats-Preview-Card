@@ -1,0 +1,37 @@
+$very-dark-blue: hsl(233, 47%, 7%);
+$dark-desaturated: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
