@@ -1,9 +1,37 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #aa5cdb;
+}
+
+.card {
+  position: relative;
+}
+
+.cardContent {
+  width: 50%;
+  padding: 4rem 8rem 2rem 4rem;
+  background-color: #1b1938;
+  color: white;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aa5cdb;
+  z-index: 2;
+  opacity: 0.5;
 }
 
 .container {
@@ -12,6 +40,21 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0.5rem;
+  background-color: #090b1a;
+}
+
+.description {
+  font-size: 0.83rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.heading span {
+  color: #aa5cdb;
 }
 
 .main {
@@ -22,9 +65,35 @@
   margin: auto;
 }
 
+.stats {
+  font-size: 1.3rem;
+  display: flex;
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
+  .card {
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+
+  .cardContent {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+
+  .cardMedia {
+    width: 100%;
+  }
+
   .container {
-    padding: 0 2rem;
+    padding: 6rem 0.5rem 0.5rem;
+    height: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
   }
 }
 
