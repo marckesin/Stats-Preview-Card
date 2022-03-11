@@ -7,7 +7,6 @@ import styles from "../styles/Home.module.css";
 const StyledCard = styled(Card)({
   borderRadius: 7,
   width: "76%",
-  height: "28rem",
   display: "flex",
   backgroundColor: "transparent",
 });
@@ -16,6 +15,7 @@ const StyledCardContent = styled(CardContent)({
   padding: "4rem 7rem 2rem 4rem",
   backgroundColor: "hsl(244, 38%, 16%)",
   color: "hsl(0, 0%, 100%)",
+  width: "50%",
 });
 
 // Card stats component
