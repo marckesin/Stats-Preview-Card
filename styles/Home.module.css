@@ -104,7 +104,7 @@
 
   .cardContent {
     text-align: center;
-    padding: 2rem 2.5rem;
+    padding: 2rem 2.5rem !important;
     width: 100% !important;
   }
 
