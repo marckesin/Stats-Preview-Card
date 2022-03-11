@@ -1,41 +1,59 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import styles from "../styles/Home.module.css";
 
 const StyledCard = styled(Card)({
   borderRadius: 7,
-  maxWidth: "90%",
+  width: "76%",
+  height: "28rem",
   display: "flex",
   backgroundColor: "transparent",
+});
+
+const StyledCardContent = styled(CardContent)({
+  width: "50%",
+  padding: "4rem 7rem 2rem 4rem",
+  backgroundColor: "hsl(244, 38%, 16%)",
+  color: "hsl(0, 0%, 100%)",
 });
 
 // Card stats component
 export default function CardStats() {
   return (
     <StyledCard className={styles.card}>
-      <CardContent className={styles.cardContent}>
+      <StyledCardContent className={styles.cardContent}>
         <h1 className={styles.heading}>
           Get <span>insights</span> that help your business grow.
         </h1>
-        <p className={styles.description}>
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
-        </p>
-        <div className={styles.stats}>
-          <p>
-            10k+ <br /> <span>companies</span>
+        <div className={styles.statsContainer}>
+          <p className={styles.description}>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
           </p>
-          <p>
-            314 <br /> <span>templates</span>
-          </p>
-          <p>
-            12m+ <br /> <span>queries</span>
-          </p>
+          <div className={styles.stats}>
+            <p>
+              10k+ <br />
+              <sup>
+                <span>COMPANIES</span>
+              </sup>
+            </p>
+            <p>
+              314 <br />
+              <sup>
+                <span>TEMPLATES</span>
+              </sup>
+            </p>
+            <p>
+              12M+ <br />
+              <sup>
+                <span>QUERIES</span>
+              </sup>
+            </p>
+          </div>
         </div>
-      </CardContent>
+      </StyledCardContent>
       <div className={styles.imageContainer}>
         <CardMedia
           className={styles.cardMedia}

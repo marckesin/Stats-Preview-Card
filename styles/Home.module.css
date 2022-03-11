@@ -11,27 +11,8 @@
   position: relative;
 }
 
-.cardContent {
-  width: 50%;
-  padding: 4rem 8rem 2rem 4rem;
-  background-color: #1b1938;
-  color: white;
-}
-
-.imageContainer {
-  position: relative;
-}
-
-.mask::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #aa5cdb;
-  z-index: 2;
-  opacity: 0.5;
+.cardMedia {
+  width: auto;
 }
 
 .container {
@@ -44,17 +25,22 @@
 }
 
 .description {
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 .heading span {
   color: #aa5cdb;
+}
+
+.imageContainer {
+  position: relative;
 }
 
 .main {
@@ -65,21 +51,63 @@
   margin: auto;
 }
 
+.mask {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aa5cdb;
+  opacity: 0.5;
+}
+
 .stats {
   font-size: 1.3rem;
   display: flex;
-  text-transform: uppercase;
+  justify-content: space-between;
+  margin-top: 5.5rem;
+  font-weight: 700;
+}
+.stats span {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
+.statsContainer {
+  padding-right: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .cardContent {
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .stats {
+    margin-top: 0;
+  }
+
+  .statsContainer {
+    padding: 0;
+  }
+}
 @media (max-width: 600px) {
   .card {
     flex-direction: column-reverse;
     margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
   }
 
   .cardContent {
     text-align: center;
-    padding: 2rem 1.5rem;
+    padding: 2rem 3.5rem;
     width: 100%;
   }
 
@@ -88,12 +116,24 @@
   }
 
   .container {
-    padding: 6rem 0.5rem 0.5rem;
+    padding: 6rem 1.5rem 0.5rem;
     height: 100%;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
   }
 
   .stats {
     flex-direction: column;
+  }
+
+  .statsContainer {
+    padding: 0;
   }
 }
 
