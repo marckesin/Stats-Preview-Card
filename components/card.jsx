@@ -13,7 +13,6 @@ const StyledCard = styled(Card)({
 });
 
 const StyledCardContent = styled(CardContent)({
-  width: "50%",
   padding: "4rem 7rem 2rem 4rem",
   backgroundColor: "hsl(244, 38%, 16%)",
   color: "hsl(0, 0%, 100%)",
