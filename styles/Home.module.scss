@@ -92,7 +92,7 @@ $slightly-transparent-white-1: hsla(0, 0%, 100%, 0.6);
 
 @media (max-width: 1200px) {
   .cardContent {
-    padding: 2rem;
+    padding: 2rem !important;
   }
 
   .heading {
@@ -112,14 +112,14 @@ $slightly-transparent-white-1: hsla(0, 0%, 100%, 0.6);
   .card {
     flex-direction: column-reverse;
     margin-bottom: 2rem;
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .cardContent {
     text-align: center;
     padding: 2rem 3.5rem;
-    width: 100%;
+    width: 100% !important;
   }
 
   .cardMedia {
