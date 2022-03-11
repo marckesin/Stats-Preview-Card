@@ -1,6 +1,6 @@
-import Head from "next/head";
 import CardStats from "../components/card";
 import Footer from "../components/footer";
+import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 // Home component to render the landing page
