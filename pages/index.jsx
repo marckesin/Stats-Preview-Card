@@ -9,7 +9,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Frontend Mentor | Stats preview card component</title>
-        <meta name="description" content="Stats preview card component." />
+        <meta
+          name="description"
+          content="This is a solution to the: Stats preview card component challenge on Frontend Mentor"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
